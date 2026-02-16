@@ -57,7 +57,7 @@ note_list.itemClicked.connect(show_note)
 notes_win = QInputDialog()
 #написисать  def add_note()
 def add_note():
-    note_name, result = QInputDialog.getText(notes_win, 'Добавить заметку', 'Название заметки:')
+    note_name, result = QInputDialog.getText(notes_win, 'Создать заметку', 'Название заметки:')
     if (note_name != '' or note_name != ' ') and result == True:
         notes[note_name] = {'текст':'','теги':[]}
         note_list.addItem(note_name)
